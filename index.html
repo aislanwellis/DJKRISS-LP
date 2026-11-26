@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>DJ KRISS — Street Frequency · Pre-save</title>
+  <meta name="description" content="Street Frequency, o novo álbum de DJ KRISS com produção de Suspeyto. 12 faixas, sexta-feira 27/11 às 00:00 em mais de 450 plataformas e 200 países. Ouça as prévias e faça o pre-save.">
+  <meta name="theme-color" content="#04050a">
+  <meta property="og:type" content="music.album">
+  <meta property="og:url" content="https://djkriss-pre-save.auforria.com/">
+  <meta property="og:title" content="DJ KRISS — Street Frequency">
+  <meta property="og:description" content="O grave tem endereço. Sexta, 00:00. Ouça as prévias e faça o pre-save.">
+  <meta property="og:image" content="https://djkriss-pre-save.auforria.com/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/album-cover-600.webp">
+  <link rel="preload" href="assets/ceilandia-noite.webp" as="image" crossorigin="anonymous">
+  <link rel="modulepreload" href="vendor/three.module.min.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="scene-fallback" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Intro: Auforria Records apresenta -->
+  <div id="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <img src="assets/auforria.png" alt="" class="intro-logo">
+      <span class="intro-sub">apresenta</span>
+      <div class="intro-bar"><i></i></div>
+    </div>
+  </div>
+
+  <header class="top">
+    <a class="seal" href="#topo" aria-label="Auforria Records apresenta">
+      <img src="assets/auforria.png" alt="Auforria Records">
+      <span>apresenta</span>
+    </a>
+    <a class="top-cta" data-presave-link target="_blank" rel="noopener">Pre-save</a>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="t-hero">
+      <div class="hero-inner">
+        <p class="kicker reveal"><span class="dot"></span> Novo álbum · de Ceilândia para o mundo</p>
+        <h1 id="t-hero" class="hero-title">
+          <span class="chrome" data-text="DJ KRISS">DJ KRISS</span>
+          <span class="album gold">STREET FREQUENCY</span>
+        </h1>
+        <p class="tagline reveal">O grave tem endereço. <b>E ele é a rua.</b></p>
+
+        <div class="countdown reveal" id="countdown" aria-live="polite">
+          <div class="cd-label">Sexta-feira <b>27/11</b> · <b>00:00</b> · nas ruas</div>
+          <div class="cd-grid">
+            <div><b data-cd="d">00</b><span>dias</span></div>
+            <div><b data-cd="h">00</b><span>horas</span></div>
+            <div><b data-cd="m">00</b><span>min</span></div>
+            <div><b data-cd="s">00</b><span>seg</span></div>
+          </div>
+        </div>
+
+        <div class="hero-ctas reveal">
+          <a class="btn btn-primary" data-presave-link target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-cta-label>Fazer pre-save</span>
+          </a>
+          <button class="btn btn-ghost" data-play-first>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            Ouvir prévias
+          </button>
+        </div>
+        <p class="prod reveal">PROD. BY <b>SUSPEYTO</b> · 12 FAIXAS · 450 PLATAFORMAS</p>
+      </div>
+      <a class="scroll-hint" href="#previas" aria-label="Rolar para as prévias"><span></span></a>
+    </section>
+
+    <!-- PRÉVIAS -->
+    <section class="sec sec-tracks" id="previas" aria-labelledby="t-tracks">
+      <h2 id="t-tracks" class="sec-title"><span class="mono">Prévias exclusivas · 12 faixas</span>Aperte o play. Sinta primeiro.</h2>
+      <p class="sec-note">Os primeiros 30 segundos de cada faixa, de 0:00 a 0:30. O resto chega sexta, à meia-noite.</p>
+      <div class="tracks" id="tracks"></div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="sec sec-about" aria-labelledby="t-about">
+      <figure class="about-banner reveal">
+        <img src="assets/img/kriss-3poses.webp" alt="DJ KRISS nas pick-ups" width="1280" height="720" loading="lazy">
+      </figure>
+      <div class="about-text">
+        <h2 id="t-about" class="sec-title"><span class="mono">O disco</span>Tem som que se ouve. Tem som que se sente no peito.</h2>
+        <p class="reveal"><b>Street Frequency</b> nasce na calçada: no porta-malas aberto, no paredão que acorda a quebrada, no vinil riscado às três da manhã. DJ KRISS pega a batida que atravessou gerações, do boom bap da era de ouro ao Miami Bass, do funk ao G-funk, do R&amp;B aos 808 do trap, e coloca tudo na mesma frequência.</p>
+        <p class="reveal">Na produção, <b>Suspeyto</b> esculpe cada faixa para ser sentida: caixa estalada, scratch de vinil, groove lento de madrugada e um subgrave que não pede licença. Em <em>Subzero</em>, o grave desce até onde o corpo ainda entende como música.</p>
+        <p class="reveal">A caixa d'água da Ceilândia no horizonte, o mundo como destino. <b>Doze faixas, quatro décadas de batida, uma só noite de estreia.</b></p>
+        <ul class="eras reveal" aria-label="Influências">
+          <li>Golden Era</li><li>Miami Bass</li><li>Funk</li><li>G-Funk</li><li>R&amp;B</li><li>Trap 808</li>
+        </ul>
+      </div>
+      <div class="about-duo reveal">
+        <img src="assets/img/ceilandia-paredao.webp" alt="DJ KRISS tocando entre paredões no centro da Ceilândia" width="810" height="1080" loading="lazy">
+        <img src="assets/img/kriss-hoodie.webp" alt="Retrato de DJ KRISS" width="810" height="1080" loading="lazy">
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="sec sec-stats" aria-label="Lançamento">
+      <div class="stat reveal"><b data-count="450" data-plus>0</b><span>plataformas digitais</span></div>
+      <div class="stat reveal"><b data-count="200" data-plus>0</b><span>países</span></div>
+      <div class="stat reveal"><b data-count="12">0</b><span>faixas inéditas</span></div>
+      <div class="stat reveal"><b>00:00</b><span>sexta · 27/11</span></div>
+    </section>
+
+    <!-- MURAL -->
+    <section class="sec sec-mural" id="mural" aria-labelledby="t-mural">
+      <h2 id="t-mural" class="sec-title"><span class="mono">Mural da quebrada</span>Deixa teu salve pro KRISS</h2>
+      <p class="sec-note">De onde você é, qual prévia bateu mais forte, qual paredão vai tocar o disco primeiro. Escreve aí.</p>
+      <div class="mural">
+        <form class="mural-form" id="mural-form" novalidate>
+          <label class="field">
+            <span>Seu nome</span>
+            <input name="nome" type="text" maxlength="40" autocomplete="name" placeholder="Ex.: Jéssica da QNM" required>
+          </label>
+          <label class="field">
+            <span>Sua mensagem <small data-counter>0/280</small></span>
+            <textarea name="mensagem" maxlength="280" rows="4" placeholder="Manda o papo…" required></textarea>
+          </label>
+          <label class="hp" aria-hidden="true">Site <input name="site" tabindex="-1" autocomplete="off"></label>
+          <button class="btn btn-primary" type="submit">Enviar salve</button>
+          <p class="mural-status" id="mural-status" role="status" aria-live="polite"></p>
+          <p class="mural-rules">Seja respeitoso. Links não são publicados.</p>
+        </form>
+        <div class="mural-feed" id="mural-count">
+          <div class="mural-feed-head"><span class="mono">Ao vivo</span><span class="mono" id="mural-total"></span></div>
+          <ol class="mural-list" id="mural-list" aria-label="Mensagens dos visitantes"></ol>
+          <p class="mural-empty" id="mural-empty">Seja o primeiro a mandar um salve.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-SAVE -->
+    <section class="sec sec-presave" id="presave" aria-labelledby="t-presave">
+      <h2 id="t-presave" class="sec-title center"><span class="mono">Primeira fila</span>Sexta, 00:00. A rua sobe o volume.</h2>
+      <p class="sec-note center">Faça o pre-save e o álbum cai na sua biblioteca no exato minuto do lançamento.</p>
+      <a class="btn btn-primary btn-xl" data-presave-link target="_blank" rel="noopener">
+        <span data-cta-label>Fazer pre-save agora</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="embed">
+        <div class="embed-bar mono"><i></i><i></i><i></i><span>hitondigital.com · pre-save</span></div>
+        <iframe data-presave-frame title="Pre-save Street Frequency — DJ KRISS" loading="lazy" allow="autoplay; encrypted-media; clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <a class="embed-fallback" data-presave-link target="_blank" rel="noopener">Não carregou? Toque para abrir o pre-save →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-logos">
+      <img src="assets/pegasus.png" alt="Pegasus Caçulinha" class="lg-pegasus" loading="lazy">
+      <span class="x">×</span>
+      <img src="assets/auforria.png" alt="Auforria Records" class="lg-auforria" loading="lazy">
+    </div>
+    <p class="mono">DJ KRISS · STREET FREQUENCY · PROD. BY SUSPEYTO</p>
+    <p class="foot-small">© 2026 Auforria Records. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Mini player fixo -->
+  <div class="dock" id="dock">
+    <div class="dock-fill" aria-hidden="true"></div>
+    <button class="dock-info" aria-label="Ir para a faixa">
+      <img class="dock-cover" src="assets/covers/01-low-frequency.webp" alt="">
+      <span><small class="mono dock-num">01/12 · PRÉVIA</small><b class="dock-title">Low Frequency</b></span>
+    </button>
+    <button class="dock-play" aria-label="Tocar ou pausar">
+      <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>
+      <svg class="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.6v14H7zm6.4 0H17v14h-3.6z" fill="currentColor"/></svg>
+    </button>
+    <button class="dock-next" aria-label="Próxima faixa"><svg viewBox="0 0 24 24"><path d="M15.8 5H18v14h-2.2zM4 5v14l10.5-7z" fill="currentColor"/></svg></button>
+    <a class="dock-cta" data-presave-link target="_blank" rel="noopener">PRE-SAVE</a>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
